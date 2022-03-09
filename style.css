@@ -1,54 +1,114 @@
-body{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: black;
-    color: #fcd303;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    font-family: Arial;
+    color: white;
+}
+
+.bi-caret-down, .bi-caret-down-fill, .bi-caret-left, .bi-caret-left-fill{
+    color:  rgb(255, 230, 0);
 }
 
 
-/* === HERO === */
-.hero{
+
+/* === LOGO === */
+h1{
+    margin-left: 30px;
+    padding-top: 10px;
+}
+
+h1 a{
+    color: rgb(255, 230, 0);
+    text-decoration: none;
+}
+/* === END LOGO === */
+
+
+
+/* === SOCIALS === */
+.socials{
+    position: absolute;
     text-align: center;
-    margin-bottom: 10%;
+    width: fit-content;
+    font-size: 20px;
+    margin: 0 35px;
+    margin-top: 10px;
 }
 
-.hero h1{
-    margin-top: 15%;
-    margin-bottom: 10%;
+.socials ul{
+    list-style: none;
 }
 
-#socials ul{
-    list-style-type: none;
+.socials ul li{
+    margin-top: 35px;
+    position: relative;
+    top: 0;
+    transition: top ease 0.3s;
 }
 
-#socials ul li{
-    text-align: right;
-}
-/* === END HERO === */
-
-
-/* === ABOUT === */
-
-#about-tit{
-    margin-left: 10%;
+.socials ul li:hover{
+    top: 5px;
 }
 
-#about-texto{
-    margin: 50px 15%;
-    font-size: 24px;
-    line-height: 35px;
+.socials ul li a{
+    padding: 5px;
+    color: rgb(255, 230, 0);
+}
+/* === END SOCIALS === */
+
+
+
+
+/* === NAVMENU === */
+.navmenu{
+    position: absolute;
     text-align: center;
-}
-
-.skills{
     text-align: center;
+    width: fit-content;
+    font-size: 20px;
+    margin: 0 10px;
+    right: 0;
 }
 
-.skills img{
-    margin: 0px 50px;
+.navmenu ul{
+    list-style: none;
 }
-/* === END ABOUT === */
 
+.navmenu ul li{
+    padding: 5px;
+    display: inline;
+    margin-right: 35px;
+    position: relative;
+    right: 0;
+    transition: right ease 0.3s;
+}
+
+.navmenu ul li:hover{
+    right: 5px;
+}
+
+.navmenu ul li a{
+    text-decoration: none;
+    color: rgb(255, 230, 0);
+}
+/* === END NAVMENU === */
+
+
+/* === SCREEN === */
+.screen{
+    position: absolute;
+    background: none;
+    width: calc(100vw - 200px);
+    height: calc(100vh - 120px);
+    margin-left: 100px;
+    margin-top: 40px;
+    border: 1px solid white;
+}
+/* === END SCREEN === */
 
